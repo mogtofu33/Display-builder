@@ -1,5 +1,13 @@
 # Display Builder
 
+[Drupal module display builder](https://www.drupal.org/project/display_builder)
+
+A display building tool by the UI Suite team:
+
+- Design system native: fully use your design system (components, style utilities, icons, themes/modes, CSS variables...) directly in Drupal without the burden of compatibility layers
+- Unified: can be used instead of Layout Builder for entity view displays, Block Layout for page displays, and as a replacement of the Views' display building feature.
+- Modern: A builder for the world of today, with powerful features (dynamic previews, pattern presets, real-time collaboration, deep integration with Drupal APIs...)
+
 ## Installation
 
 For now Display Builder works only in dev mode and poorly with Drupal cache.
