@@ -1,0 +1,18 @@
+{
+  "name": "drupal/display_builder",
+  "description": "Display Builder",
+  "license": "GPL-2.0+",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/display_builder",
+  "require": {
+      "drupal/core": "^11.1",
+      "drupal/ui_patterns": "2.0.x-dev",
+      "php": ">=8.3"
+  },
+  "require-dev": {
+      "drupal/ui_icons": "^1.1",
+      "drupal/ui_skins": "^1.1",
+      "drupal/ui_styles": "^1.16",
+      "drupal/page_manager": "^4"
+  }
+}

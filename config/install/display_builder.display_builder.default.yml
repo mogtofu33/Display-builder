@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies: {}
+id: default
+label: Default
+description: "Default display builder configuration."
+panel_settings:
+  library:
+    component_library:
+      enable: "1"
+      weight: "1"
+    block_library:
+      enable: "1"
+      weight: "2"
+    pattern_preset_library:
+      weight: "3"
+      enable: 0
+  view:
+    builder:
+      enable: "1"
+      options: main
+      weight: "-10"
+    preview:
+      enable: "1"
+      options: main
+      weight: "-9"
+    library:
+      enable: "1"
+      options: sidebar
+      weight: "-10"
+    layers:
+      options: sidebar
+      weight: "-9"
+      enable: "1"
+    logs:
+      options: sidebar
+      weight: "-8"
+      enable: 0
+    hybrid:
+      options: sidebar
+      weight: "-6"
+      enable: 0
+    index_debug:
+      enable: 0
+      options: sidebar
+      weight: 0
+    state_debug:
+      options: sidebar
+      weight: "-3"
+      enable: 0
+  contextual:
+    instance_form:
+      enable: "1"
+      weight: "1"
+    ui_styles:
+      enable: "1"
+      weight: "2"
+    ui_skins:
+      enable: "1"
+      weight: "3"
+    visibility_conditions:
+      weight: "4"
+      enable: 0
+    info:
+      enable: "1"
+      weight: "5"
+  button:
+    history:
+      enable: "1"
+      weight: "-10"
+    state:
+      enable: "1"
+      weight: "-9"
+    instance:
+      enable: "1"
+      weight: "-8"
+    keyboard_help:
+      enable: "1"
+      weight: "-7"
+    toggle_fullscreen:
+      enable: "1"
+      weight: "-6"

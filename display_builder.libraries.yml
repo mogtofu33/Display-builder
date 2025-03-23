@@ -1,0 +1,61 @@
+shoelace:
+  css:
+    theme:
+      # https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/themes/light.css: { type: external, minified: true }
+      ./node_modules/@shoelace-style/shoelace/cdn/themes/light.css: {}
+      ./node_modules/@shoelace-style/shoelace/cdn/themes/dark.css: {}
+
+  js:
+    ./node_modules/@shoelace-style/shoelace/cdn/shoelace.js:
+      attributes:
+        type: module
+    ./node_modules/@shoelace-style/shoelace/cdn/shoelace-autoloader.js:
+      attributes:
+        type: module
+    # https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/shoelace-autoloader.js:
+    #   { type: external, minified: true, attributes: { type: "module" } }
+
+keyboard.js:
+  js:
+    ./assets/js/keyboard.js: {}
+
+# Contextual form fixes.
+form:
+  css:
+    theme:
+      ./assets/css/form.css: {}
+
+popper.js:
+  remote: https://github.com/FezVrasta/popper.js
+  license:
+    name: MIT
+    url: https://github.com/FezVrasta/popper.js/blob/master/LICENSE.md
+    gpl-compatible: true
+  version: 2
+  js:
+    ./node_modules/@popperjs/core/dist/umd/popper.min.js: { minified: true }
+    # https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js:
+    #   {
+    #     type: external,
+    #     minified: true,
+    #     attributes: { defer: false, async: false },
+    #   }
+
+tippy.js:
+  remote: https://github.com/atomiks/tippyjs
+  license:
+    name: MIT
+    url: https://github.com/atomiks/tippyjs/blob/master/LICENSE
+    gpl-compatible: true
+  version: 6
+  js:
+    ./node_modules/tippy.js/dist/tippy-bundle.umd.min.js: { minified: true }
+    # https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js:
+    #   {
+    #     type: external,
+    #     minified: true,
+    #     attributes: { defer: false, async: false },
+    #   }
+  dependencies:
+    - core/drupal
+    - display_builder/popper.js
